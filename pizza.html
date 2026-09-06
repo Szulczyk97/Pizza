@@ -1,0 +1,232 @@
+<!doctype html>
+	<html lang="pl">
+		<head>
+			<meta charset="UTF-8"/>
+			<meta name="author" content="Przemysław Szułczyński"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<meta name="robots" content="index, follow"/>
+			<meta name="description" content="Projekt Pizza - przykład strony internetowej wymyślonej pizzerii."/>
+
+			<meta property="og:type" content="website"/>
+      		<meta property="og:url" content="https://szulczyk.pl/projekt-19/pizza"/>
+      		<meta property="og:title" content="Szulczyk.pl | Projekt 19"/>
+      		<meta property="og:description" content="Pizzeria Mr. Pizza"/>
+      		<meta property="og:image" content="../favicon-512x512.webp"/>
+
+			<title>Pizzeria Mr. Pizza</title>
+			<link rel="stylesheet" media="(width >= 1100px)" href="./css_pizza/pizza_domyslne.css"/>
+			<link rel="stylesheet" media="(640px <= width < 1100px)" href="./css_pizza/pizza_tablet.css"/>
+			<link rel="stylesheet" media="(width < 640px)" href="./css_pizza/pizza_telefon.css"/>
+			<link rel="apple-touch-icon" sizes="180x180" href="../favicon-touch-icon.webp"/>
+      		<link rel="icon" type="image/webp" sizes="32x32" href="../favicon-32x32.webp"/>
+      		<link rel="icon" type="image/webp" sizes="16x16" href="../favicon-16x16.webp"/>
+			<link rel="shortcut icon" href="../favicon.ico"/>
+		</head>
+			<body>
+				<div>
+					<div id="tlo">
+						<div id="cale_menu">
+							<div id="logo">
+								<a href="pizza">
+									<picture>
+										<source srcset="./obrazki_pizza/logo.webp" media="(width < 640px)" width="80px" height="65px"/>
+										<source srcset="./obrazki_pizza/logo.webp" media="(width < 1100px)" width="100px" height="75px"/>
+										<img id="tutaj" src="./obrazki_pizza/logo.webp" width="120px" height="85px" loading="eager" alt="Logo Mr. Pizza"/>
+									</picture>
+								</a>
+							</div>
+
+							<div id="opcje">
+								<div id="menu"><a href="#lista"><b>&gt;</b> Menu</a></div>
+								<div id="galeria"><a href="galeria"><b>&gt;</b> Galeria</a></div>
+								<div id="komentarze"><a href="komentarze"><b>&gt;</b> Komentarze</a></div>
+							</div>
+						</div>
+					</div>
+
+					<div id="opis">
+						<div class="info"><i>Nasza pizzeria działa od 2009 roku, serwując najpyszniejsze i najlepsze pizze w całym mieście. Specjalnie dla Państwa przygotowujemy również pyszny kebab i tortillę, a dodatkowo serwowane są u nas także naleśniki na słodko oraz naleśniki wytrawne.</i><br/><b>Zapraszamy!</b></div>
+
+						<div>
+							<picture>
+								<source srcset="./obrazki_pizza/linia.webp" media="(width < 640px)" width="90%" height="25px"/>
+								<source srcset="./obrazki_pizza/linia.webp" media="(width < 1100px)" width="80%" height="35px"/>
+								<img src="./obrazki_pizza/linia.webp" width="75%" height="45px" loading="eager" alt="Linia ozdobna"/>
+							</picture>
+						</div>
+
+						<div class="info">
+							<picture>
+								<source srcset="./obrazki_pizza/telefon.webp" media="(width < 640px)" width="18px" height="18px"/>
+								<source srcset="./obrazki_pizza/telefon.webp" media="(width < 1100px)" width="20px" height="20px"/>
+								<img src="./obrazki_pizza/telefon.webp" width="22px" height="22px" loading="eager" alt="Telefon"/>
+							</picture>
+							<i>Telefon:</i> <b>+48 673 279 142</b>
+						</div>
+						<div class="info">
+							<picture>
+								<source srcset="./obrazki_pizza/znacznik.webp" media="(width < 640px)" width="18px" height="18px"/>
+								<source srcset="./obrazki_pizza/znacznik.webp" media="(width < 1100px)" width="20px" height="20px"/>
+								<img src="./obrazki_pizza/znacznik.webp" width="22px" height="22px" loading="eager" alt="Znacznik"/>
+							</picture>
+							<i>Gdzie jesteśmy?</i><br/><b>Kazimierza Wielkiego 37, 64-920 Piła</b>
+						</div>
+						<div class="info">
+							<picture>
+								<source srcset="./obrazki_pizza/zegar.webp" media="(width < 640px)" width="18px" height="18px"/>
+								<source srcset="./obrazki_pizza/zegar.webp" media="(width < 1100px)" width="20px" height="20px"/>
+								<img src="./obrazki_pizza/zegar.webp" width="22px" height="22px" loading="eager" alt="Zegar"/>
+							</picture>
+							<i>Godziny otwarcia:</i><br/>Poniedziałek - Piątek <b>10:00 - 22:00</b><br/>Sobota <b>11:00 - 20:00</b><br/>Niedziela <b>13:00 - 18:00</b>
+						</div>
+						<div class="info">
+							<picture>
+								<source srcset="./obrazki_pizza/auto.webp" media="(width < 640px)" width="18px" height="18px"/>
+								<source srcset="./obrazki_pizza/auto.webp" media="(width < 1100px)" width="20px" height="20px"/>
+								<img src="./obrazki_pizza/auto.webp" width="22px" height="22px" loading="eager" alt="Auto"/>
+							</picture>
+							<i>Zamówienia z dowozem:</i><br/><b>+20 złotych</b>
+						</div>
+						<div id="lista" class="info">
+							<picture>
+								<source srcset="./obrazki_pizza/promocja.webp" media="(width < 640px)" width="18px" height="18px"/>
+								<source srcset="./obrazki_pizza/promocja.webp" media="(width < 1100px)" width="20px" height="20px"/>
+								<img src="./obrazki_pizza/promocja.webp" width="22px" height="22px" loading="eager" alt="Promocja"/>
+							</picture>
+							<i>Promocje:</i><br/>Przy zamówieniu powyżej 200 złotych <b>pizza gratis</b>.
+						</div>
+
+						<div>
+							<picture>
+								<source srcset="./obrazki_pizza/linia.webp" media="(width < 640px)" width="90%" height="25px"/>
+								<source srcset="./obrazki_pizza/linia.webp" media="(width < 1100px)" width="80%" height="35px"/>
+								<img src="./obrazki_pizza/linia.webp" width="75%" height="45px" loading="eager" alt="Linia ozdobna"/>
+							</picture>
+						</div>
+
+						<div class="info">
+							<picture>
+								<source srcset="./obrazki_pizza/menu.webp" media="(width < 640px)" width="18px" height="18px"/>
+								<source srcset="./obrazki_pizza/menu.webp" media="(width < 1100px)" width="20px" height="20px"/>
+								<img src="./obrazki_pizza/menu.webp" width="22px" height="22px" loading="eager" alt="Karta menu"/>
+							</picture>
+							<i>MENU:</i>
+						</div>
+						<div id="tablica">
+							<div class="naglowek">PIZZE</div>
+							<div class="zawartosc">1. Margherita<br/>sos podkładowy, ser</div>
+							<div class="wielkosc">M:15zł Ś:34zł D:51zł</div>
+							<div class="zawartosc">2. Vesuvio<br/>sos podkładowy, ser, szynka</div>
+							<div class="wielkosc">M:17zł Ś:36zł D:54zł</div>
+							<div class="zawartosc">3. Capricciosa<br/>sos podkładowy, ser, szynka, pieczarki</div>
+							<div class="wielkosc">M:18zł Ś:39zł D:57zł</div>
+							<div class="zawartosc">4. Kapitol<br/>sos podkładowy, ser, boczek, pieczarki, cebula</div>
+							<div class="wielkosc">M:23zł Ś:40zł D:59zł</div>
+							<div class="zawartosc">5. Via veneto<br/>sos podkładowy, ser, kurczak, pieczarki, cebula</div>
+							<div class="wielkosc">M:24zł Ś:41zł D:62zł</div>
+							<div class="zawartosc">6. Rachetta<br/>sos podkładowy, ser, salami, boczek, cebula, papryka</div>
+							<div class="wielkosc">M:27zł Ś:45zł D:67zł</div>
+							<div class="zawartosc">7. Benito<br/>sos podkładowy, ser, szynka, pieczarki, cebula, oliwki</div>
+							<div class="wielkosc">M:32zł Ś:59zł D:78zł</div>
+							<div class="zawartosc">8. Carbonara<br/>sos podkładowy, ser, pieczarki, tuńczyk, kukurydza</div>
+							<div class="wielkosc">M:27zł Ś:43zł D:64zł</div>
+							<div class="zawartosc">9. Via sacra<br/>sos podkładowy, ser, salami, cebula, papryka</div>
+							<div class="wielkosc">M:31zł Ś:57zł D:69zł</div>
+							<div class="zawartosc">10. Maximus<br/>sos podkładowy, ser, kurczak, pieczarki, papryka, kukurydza</div>
+							<div class="wielkosc">M:26zł Ś:46zł D:72zł</div>
+							<div class="zawartosc">11. Roma<br/>sos podkładowy, ser, pieczarki, cebula, papryka</div>
+							<div class="wielkosc">M:19zł Ś:31zł D:49zł</div>
+							<div class="zawartosc">12. Wenecja<br/>sos podkładowy, ser, pieczarki, cebula</div>
+							<div class="wielkosc">M:17zł Ś:30zł D:52zł</div>
+							<div class="zawartosc">13. Lombardo<br/>sos podkładowy, ser, pieczarki</div>
+							<div class="wielkosc">M:16zł Ś:29zł D:50zł</div>
+							<div class="zawartosc">14. Corrida<br/>sos podkładowy, ser, salami, mięso mielone, cebula, czosnek</div>
+							<div class="wielkosc">M:21zł Ś:37zł D:53zł</div>
+							<div class="zawartosc">15. Wegetariańska<br/>sos podkładowy, ser, pieczarki, kukurydza, cebula, pomidor</div>
+							<div class="wielkosc">M:34zł Ś:58zł D:76zł</div>
+							<div class="zawartosc">16. Toridos<br/>sos podkładowy, ser, pieczarki, szynka, cebula, papryka</div>
+							<div class="wielkosc">M:22zł Ś:38zł D:61zł</div><br/>
+							
+							<div class="naglowek">TORTILLE</div>
+							<div class="zawartosc">1. Tortilla z kebabem<br/>mięso, kapusta pekińska, sałata lodowa, pomidor, ogórek, sos (sos łagodny, sos pikantny, tzatziki, sos mieszany)</div>
+							<div class="wielkosc">M:15zł Ś:26zł D:38zł</div>
+							<div class="zawartosc">2. Tortilla z nuggetsami<br/>nuggetsy, kapusta pekińska, sałata lodowa, pomidor, ogórek, sos (sos łagodny, sos pikantny, tzatziki, sos mieszany)</div>
+							<div class="wielkosc">M:16zł Ś:28zł D:40zł</div>
+							<div class="zawartosc">3. Tortilla wegetariańska<br/>ser, kapusta pekińska, sałata lodowa, pomidor, ogórek, oliwki, czerwona cebula, tzatziki</div>
+							<div class="wielkosc">M:12zł Ś:23zł D:34zł</div>
+							<div class="zawartosc">4. Tortilla włoska<br/>mięso, kapusta pekińska, suszone pomidory, rukola, sałata lodowa, słonecznik prażony, czerwona cebula, sos (sos łagodny, sos pikantny, tzatziki, sos mieszany)</div>
+							<div class="wielkosc">M:20zł Ś:32zł D:46zł</div><br/>
+
+							<div class="naglowek">KEBABY</div>
+							<div class="zawartosc">1. Kebab w bułce<br/>mięso, surówka, ogórek, pomidor, sos (sos łagodny, sos pikantny, tzatziki, sos mieszany)</div>
+							<div class="wielkosc">M:11zł Ś:20zł D:34zł</div>
+							<div class="zawartosc">2. Kebab w bułce z frytkami<br/>mięso, frytki, sos (sos łagodny, sos pikantny, tzatziki, sos mieszany)</div>
+							<div class="wielkosc">M:15zł Ś:24zł D:39zł</div>
+							<div class="zawartosc">3. Bułka jarska<br/>surówka, ogórek, pomidor, cebula, kukurydza, sos (sos łagodny, sos pikantny, tzatziki, sos mieszany)</div>
+							<div class="wielkosc">M:18zł Ś:27zł D:46zł</div>
+							<div class="zawartosc">4. Kebab z surówką<br/>mięso, surówka, sos (sos łagodny, sos pikantny, tzatziki, sos mieszany)</div>
+							<div class="wielkosc">M:15zł Ś:25zł D:41zł</div>
+							<div class="zawartosc">5. Kebab z frytkami i surówką<br/>mięso, frytki, surówka, sos (sos łagodny, sos pikantny, tzatziki, sos mieszany)</div>
+							<div class="wielkosc">M:16zł Ś:26zł D:42zł</div>
+							<div class="zawartosc">6. Frytki z surówką<br/>frytki, surówka</div>
+							<div class="wielkosc">M:12zł Ś:21zł D:36zł</div>
+							<div class="zawartosc">7. Zestaw surówek<br/>surówki różne</div>
+							<div class="wielkosc">M:10zł Ś:19zł D:30zł</div><br/>
+
+							<div class="naglowek">NALEŚNIKI</div>
+							<div class="zawartosc">1. Naleśniki z serem<br/>ser, sos (sos boloński lub czosnkowy)</div>
+							<div class="wielkosc">M:6zł Ś:14zł D:21zł</div>
+							<div class="zawartosc">2. Naleśniki z serem i kurczakiem<br/>ser, kurczak, sos (sos boloński lub czosnkowy)</div>
+							<div class="wielkosc">M:8zł Ś:16zł D:23zł</div>
+							<div class="zawartosc">3. Naleśniki z serem i kebabem<br/>ser, kebab, sos (sos boloński lub czosnkowy)</div>
+							<div class="wielkosc">M:8zł Ś:16zł D:24zł</div>
+							<div class="zawartosc">4. Naleśniki wegetariańskie<br/>ser, papryka, cebula, kukurydza, ogórek konserwowy, sos (sos boloński lub czosnkowy)</div>
+							<div class="wielkosc">M:13zł Ś:20zł D:28zł</div><br/>
+
+							<div class="naglowek">NAPOJE</div>
+							<div class="zawartosc2">1. Coca-Cola 0,5L 4zł</div>
+							<div class="zawartosc2">2. Coca-Cola Zero 0,5L 5zł</div>
+							<div class="zawartosc2">3. Coca-Cola Lime 0,5L 5zł</div>
+							<div class="zawartosc2">4. Fanta 0,5L 6zł</div>
+							<div class="zawartosc2">5. Sprite 0,7L 8zł</div>
+							<div class="zawartosc2">6. Tymbark 0,5L 6zł</div>
+							<div class="zawartosc2">7. Redbull 0,3L 5zł</div>
+							<div class="zawartosc2">8. Fuze Tea 0,5L 7zł</div>
+						</div>
+					</div>
+
+					<div id="tlo2">
+						<div id="zakonczenie">
+							<div class="info2">
+								<picture>
+									<source srcset="./obrazki_pizza/telefon.webp" media="(width < 640px)" width="18px" height="18px"/>
+									<source srcset="./obrazki_pizza/telefon.webp" media="(width < 1100px)" width="20px" height="20px"/>
+									<img src="./obrazki_pizza/telefon.webp" width="22px" height="22px" loading="lazy" alt="Telefon"/>
+								</picture>
+								<i>Telefon:</i> <b>+48 673 279 142</b>
+							</div>
+
+							<div class="info2">
+								<picture>
+									<source srcset="./obrazki_pizza/znacznik.webp" media="(width < 640px)" width="18px" height="18px"/>
+									<source srcset="./obrazki_pizza/znacznik.webp" media="(width < 1100px)" width="20px" height="20px"/>
+									<img src="./obrazki_pizza/znacznik.webp" width="22px" height="22px" loading="lazy" alt="Znacznik"/>
+								</picture>
+								<i>Nasz adres:</i><br/><b>Kazimierza Wielkiego 37, 64-920 Piła</b>
+							</div>
+
+							<div class="info2">
+								<picture>
+									<source srcset="./obrazki_pizza/mapa.webp" media="(width < 640px)" width="18px" height="18px"/>
+									<source srcset="./obrazki_pizza/mapa.webp" media="(width < 1100px)" width="20px" height="20px"/>
+									<img src="./obrazki_pizza/mapa.webp" width="22px" height="22px" loading="lazy" alt="Mapa"/>
+								</picture>
+								<i>Mapa dojazdu:</i><br/><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4782.612947149569!2d16.755246!3d53.176482!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4703e6bb8a236997%3A0x91148cc5636e3d92!2sKazimierza%20Wielkiego%2037%2C%2064-920%20Pi%C5%82a%2C%20Polska!5e0!3m2!1spl!2sde!4v1748635140621!5m2!1spl!2sde" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+
+							<div id="stopka">&copy; 2025 Szulczyk - Przemysław Szułczyński</div>
+						</div>
+					</div>
+				</div>
+			</body>
+	</html>

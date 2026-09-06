@@ -1,0 +1,245 @@
+:root{
+	--wyrownanie: auto;
+	--myszka: pointer;
+	--wysrodkuj: center;
+	--rodzina: arial;
+	--pogrubienie: bold;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	min-width: 320px;
+	margin: 0;
+	background-image: url("../obrazki_pizza/tapeta_pizza.webp");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+#tlo{
+	background-image: url("../obrazki_pizza/drewno.webp");
+	border-bottom: 3.5px double #cc3300;
+	position: sticky;
+	top: 0px;
+	z-index: 1;
+}
+
+#cale_menu{
+	width: 96%;
+	height: 70px;
+	margin: var(--wyrownanie);
+	display: grid;
+	grid-template-columns: 43% 43%;
+	gap: 14%;
+}
+
+a{
+	text-decoration: none;
+}
+
+#logo{
+	margin: 2px 8% auto auto;
+	text-align: right;
+}
+
+#tutaj:hover{
+	cursor: var(--myszka);
+	transform: scale(1.05);
+}
+
+#opcje{
+	margin-top: 2px;
+	font-size: 18px;
+	font-style: italic;
+	font-family: var(--rodzina);
+}
+
+#menu{
+	width: 70px;
+}
+
+#galeria{
+	width: 80px;
+	margin-left: 4.5%;
+}
+
+#komentarze{
+	width: 120px;
+	margin-left: 9%;
+}
+
+#menu, #galeria, #komentarze{
+	line-height: 22px;
+}
+
+#menu:hover, #galeria:hover, #komentarze:hover{
+	text-shadow: 0px 4px 10px red;
+	cursor: var(--myszka);
+	transform: scale(1.05);
+}
+
+#opis{
+	width: 96%;
+	margin: var(--wyrownanie);
+	padding: 5px 0px 20px 0px;
+	text-align: var(--wysrodkuj);
+	font-size: 20px;
+	opacity: 88%;
+	border-left: 2.5px double #8a8a8a;
+	border-right: 2.5px double #8a8a8a;
+	background: linear-gradient(to bottom,orange,#ffca28);
+}
+
+.info{
+	margin: 12px 2px 12px 2px;
+}
+
+#tablica{
+	width: 96%;
+	margin: var(--wyrownanie);
+	padding: 5px 2px 5px 2px;
+	font-family: var(--rodzina);
+	color: white;
+	background-color: #0e0e0e;
+}
+
+.naglowek{
+	padding: 6px 0px 6px 0px;
+	font-weight: var(--pogrubienie);
+	text-decoration: red underline;
+}
+
+.zawartosc, .zawartosc2{
+	padding: 20px 0px 3px 0px;
+}
+
+.zawartosc2{
+	word-spacing: 3px;
+}
+
+.wielkosc{
+	word-spacing: 15px;
+}
+
+#tlo2{
+	background-image: url("../obrazki_pizza/drewno.webp");
+	border-top: 3.5px double #cc3300;
+}
+
+#zakonczenie{
+	width: 96%;
+	margin: var(--wyrownanie);
+	padding: 4px 0px 4px 0px;
+	text-align: var(--wysrodkuj);
+	font-size: 17px;
+}
+
+.info2{
+	margin: 4px auto 4px auto;
+}
+
+iframe{
+	width: 96%;
+	height: 200px;
+	border: 0;
+}
+
+#stopka{
+	margin: 10px auto 5px auto;
+	font-size: 15px;
+	font-style: italic;
+	text-shadow: 0.5px 0.5px 1px black;
+}
+
+.wyrownaj{
+	display: none;
+	text-align: var(--wysrodkuj);
+}
+
+.ustaw{
+	vertical-align: middle;
+}
+
+.wybierz{
+	cursor: var(--myszka);
+}
+
+input[type="text"]{
+	width: 180px;
+	height: 25px;
+	font-size: 18px;
+}
+
+#garnek{
+	display: none;
+}
+
+#info3{
+	margin: 12px auto 4px auto;
+}
+
+textarea{
+	width: 75%;
+	height: 100px;
+	max-width: 85%;
+	max-height: 120px;
+	font-size: 17px;
+}
+
+#mniejsze{
+	font-size: 14px;
+	font-weight: var(--pogrubienie);
+}
+
+input[type="submit"]{
+	width: 160px;
+	height: 40px;
+	font-size: 16px;
+	cursor: var(--myszka);
+}
+
+.brak{
+	font-size: 20px;
+}
+
+.opinie{
+	width: 75%;
+	margin: 3px auto 8px auto;
+	display: grid;
+	grid-template-columns: 48% 48%;
+	gap: 4%;
+	border: 3.5px double #0e0e0e;
+}
+
+input[type="text"], textarea, input[type="submit"], .opinie{
+	border-radius: 3px;
+	background-color: white;
+}
+
+.autor{
+	margin-top: 3px;
+	font-family: var(--rodzina);
+	font-weight: var(--pogrubienie);
+	font-size: 17px;
+	word-break: break-word;
+}
+
+.czas{
+	margin-top: 6px;
+	font-size: 13px;
+}
+
+.wynik{
+	margin: 0px 6px 6px 6px;
+	grid-column: 1 / span 2;
+	font-family: var(--rodzina);
+	font-size: 16px;
+	word-break: break-word;
+}

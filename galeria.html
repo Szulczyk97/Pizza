@@ -1,0 +1,193 @@
+<!doctype html>
+	<html lang="pl">
+		<head>
+			<meta charset="UTF-8"/>
+			<meta name="author" content="Przemysław Szułczyński"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<meta name="robots" content="index, follow"/>
+			<meta name="description" content="Projekt Pizza - przykład strony internetowej wymyślonej pizzerii."/>
+
+			<meta property="og:type" content="website"/>
+      		<meta property="og:url" content="https://szulczyk.pl/projekt-19/galeria"/>
+      		<meta property="og:title" content="Szulczyk.pl | Projekt 19: Galeria"/>
+      		<meta property="og:description" content="Pizzeria Mr. Pizza - Galeria"/>
+      		<meta property="og:image" content="../favicon-512x512.webp"/>
+
+			<title>Pizzeria Mr. Pizza - Galeria</title>
+			<link rel="stylesheet" media="(width >= 1100px)" href="./css_pizza/pizza_domyslne.css"/>
+			<link rel="stylesheet" media="(640px <= width < 1100px)" href="./css_pizza/pizza_tablet.css"/>
+			<link rel="stylesheet" media="(width < 640px)" href="./css_pizza/pizza_telefon.css"/>
+			<link rel="apple-touch-icon" sizes="180x180" href="../favicon-touch-icon.webp"/>
+      		<link rel="icon" type="image/webp" sizes="32x32" href="../favicon-32x32.webp"/>
+      		<link rel="icon" type="image/webp" sizes="16x16" href="../favicon-16x16.webp"/>
+			<link rel="shortcut icon" href="../favicon.ico"/>
+			<script src="./skrypty_pizza/jquery.js" defer></script>
+			<script type="text/javascript" src="./skrypty_pizza/pizza.js" defer></script>
+		</head>
+			<body>
+				<div>
+					<div id="tlo">
+						<div id="cale_menu">
+							<div id="logo">
+								<a href="pizza">
+									<picture>
+										<source srcset="./obrazki_pizza/logo.webp" media="(width < 640px)" width="80px" height="65px"/>
+										<source srcset="./obrazki_pizza/logo.webp" media="(width < 1100px)" width="100px" height="75px"/>
+										<img id="tutaj" src="./obrazki_pizza/logo.webp" width="120px" height="85px" loading="eager" alt="Logo Mr. Pizza"/>
+									</picture>
+								</a>
+							</div>
+
+							<div id="opcje">
+								<div id="menu"><a href="pizza#lista"><b>&gt;</b> Menu</a></div>
+								<div id="galeria"><a href="galeria"><b>&gt;</b> Galeria</a></div>
+								<div id="komentarze"><a href="komentarze"><b>&gt;</b> Komentarze</a></div>
+							</div>
+						</div>
+					</div>
+
+					<div id="opis">
+						<div class="info"><i>Witamy w galerii, gdzie zostały uchwycone  i zamieszczone najlepsze zdjęcia naszych pysznych potraw. Każde z umieszczonych na zdjęciach dań jest przygotowywane z największą precyzją i miłością przez naszych doświadczonych kucharzy. Odwiedź naszą pizzerię i przekonaj się sam.</i><br/><b>Zapraszamy!</b></div>
+
+						<div>
+							<picture>
+								<source srcset="./obrazki_pizza/linia.webp" media="(width < 640px)" width="90%" height="25px"/>
+								<source srcset="./obrazki_pizza/linia.webp" media="(width < 1100px)" width="80%" height="35px"/>
+								<img src="./obrazki_pizza/linia.webp" width="75%" height="45px" loading="eager" alt="Linia ozdobna"/>
+							</picture>
+						</div>
+
+						<div class="info">
+							<picture>
+								<source srcset="./obrazki_pizza/galeria.webp" media="(width < 640px)" width="18px" height="18px"/>
+								<source srcset="./obrazki_pizza/galeria.webp" media="(width < 1100px)" width="20px" height="20px"/>
+								<img src="./obrazki_pizza/galeria.webp" width="22px" height="22px" loading="eager" alt="Obrazki"/>
+							</picture>
+							<i>GALERIA:</i>
+						</div>
+						<div id="tablica">
+							<div class="naglowek">PIZZE</div>
+							<div class="zawartosc">1. <span class="wybierz" id="laduj1">Margherita <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="eager" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz1"><picture><source srcset="./obrazki_pizza/obrazek1.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek1.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek1.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_1"/></picture></div>
+							<div class="zawartosc">2. <span class="wybierz" id="laduj2">Vesuvio <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="eager" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz2"><picture><source srcset="./obrazki_pizza/obrazek2.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek2.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek2.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_2"/></picture></div>
+							<div class="zawartosc">3. <span class="wybierz" id="laduj3">Capricciosa <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="eager" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz3"><picture><source srcset="./obrazki_pizza/obrazek3.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek3.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek3.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_3"/></picture></div>
+							<div class="zawartosc">4. <span class="wybierz" id="laduj4">Kapitol <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="eager" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz4"><picture><source srcset="./obrazki_pizza/obrazek4.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek4.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek4.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_4"/></picture></div>
+							<div class="zawartosc">5. <span class="wybierz" id="laduj5">Via veneto <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="eager" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz5"><picture><source srcset="./obrazki_pizza/obrazek5.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek5.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek5.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_5"/></picture></div>
+							<div class="zawartosc">6. <span class="wybierz" id="laduj6">Rachetta <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="eager" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz6"><picture><source srcset="./obrazki_pizza/obrazek6.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek6.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek6.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_6"/></picture></div>
+							<div class="zawartosc">7. <span class="wybierz" id="laduj7">Benito <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="eager" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz7"><picture><source srcset="./obrazki_pizza/obrazek7.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek7.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek7.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_7"/></picture></div>
+							<div class="zawartosc">8. <span class="wybierz" id="laduj8">Carbonara <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="eager" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz8"><picture><source srcset="./obrazki_pizza/obrazek8.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek8.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek8.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_8"/></picture></div>
+							<div class="zawartosc">9. <span class="wybierz" id="laduj9">Via sacra <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="eager" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz9"><picture><source srcset="./obrazki_pizza/obrazek9.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek9.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek9.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_9"/></picture></div>
+							<div class="zawartosc">10. <span class="wybierz" id="laduj10">Maximus <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="eager" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz10"><picture><source srcset="./obrazki_pizza/obrazek10.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek10.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek10.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_10"/></picture></div>
+							<div class="zawartosc">11. <span class="wybierz" id="laduj11">Roma <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz11"><picture><source srcset="./obrazki_pizza/obrazek11.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek11.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek11.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_11"/></picture></div>
+							<div class="zawartosc">12. <span class="wybierz" id="laduj12">Wenecja <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz12"><picture><source srcset="./obrazki_pizza/obrazek12.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek12.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek12.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_12"/></picture></div>
+							<div class="zawartosc">13. <span class="wybierz" id="laduj13">Lombardo <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz13"><picture><source srcset="./obrazki_pizza/obrazek13.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek13.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek13.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_13"/></picture></div>
+							<div class="zawartosc">14. <span class="wybierz" id="laduj14">Corrida <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz14"><picture><source srcset="./obrazki_pizza/obrazek14.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek14.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek14.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_14"/></picture></div>
+							<div class="zawartosc">15. <span class="wybierz" id="laduj15">Wegetariańska <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz15"><picture><source srcset="./obrazki_pizza/obrazek15.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek15.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek15.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_15"/></picture></div>
+							<div class="zawartosc">16. <span class="wybierz" id="laduj16">Toridos <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz16"><picture><source srcset="./obrazki_pizza/obrazek16.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek16.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek16.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_16"/></picture></div><br/>
+
+							<div class="naglowek">TORTILLE</div>
+							<div class="zawartosc">1. <span class="wybierz" id="laduj17">Tortilla z kebabem <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz17"><picture><source srcset="./obrazki_pizza/obrazek17.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek17.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek17.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_17"/></picture></div>
+							<div class="zawartosc">2. <span class="wybierz" id="laduj18">Tortilla z nuggetsami <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz18"><picture><source srcset="./obrazki_pizza/obrazek18.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek18.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek18.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_18"/></picture></div>
+							<div class="zawartosc">3. <span class="wybierz" id="laduj19">Tortilla wegetariańska <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz19"><picture><source srcset="./obrazki_pizza/obrazek19.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek19.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek19.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_19"/></picture></div>
+							<div class="zawartosc">4. <span class="wybierz" id="laduj20">Tortilla włoska <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz20"><picture><source srcset="./obrazki_pizza/obrazek20.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek20.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek20.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_20"/></picture></div><br/>
+
+							<div class="naglowek">KEBABY</div>
+							<div class="zawartosc">1. <span class="wybierz" id="laduj21">Kebab w bułce <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz21"><picture><source srcset="./obrazki_pizza/obrazek21.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek21.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek21.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_21"/></picture></div>
+							<div class="zawartosc">2. <span class="wybierz" id="laduj22">Kebab w bułce z frytkami <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz22"><picture><source srcset="./obrazki_pizza/obrazek22.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek22.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek22.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_22"/></picture></div>
+							<div class="zawartosc">3. <span class="wybierz" id="laduj23">Bułka jarska <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz23"><picture><source srcset="./obrazki_pizza/obrazek23.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek23.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek23.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_23"/></picture></div>
+							<div class="zawartosc">4. <span class="wybierz" id="laduj24">Kebab z surówką <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz24"><picture><source srcset="./obrazki_pizza/obrazek24.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek24.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek24.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_24"/></picture></div>
+							<div class="zawartosc">5. <span class="wybierz" id="laduj25">Kebab z frytkami i surówką <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz25"><picture><source srcset="./obrazki_pizza/obrazek25.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek25.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek25.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_25"/></picture></div>
+							<div class="zawartosc">6. <span class="wybierz" id="laduj26">Frytki z surówką <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz26"><picture><source srcset="./obrazki_pizza/obrazek26.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek26.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek26.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_26"/></picture></div>
+							<div class="zawartosc">7. <span class="wybierz" id="laduj27">Zestaw surówek <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz27"><picture><source srcset="./obrazki_pizza/obrazek27.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek27.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek27.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_27"/></picture></div><br/>
+
+							<div class="naglowek">NALEŚNIKI</div>
+							<div class="zawartosc">1. <span class="wybierz" id="laduj28">Naleśniki z serem <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz28"><picture><source srcset="./obrazki_pizza/obrazek28.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek28.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek28.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_28"/></picture></div>
+							<div class="zawartosc">2. <span class="wybierz" id="laduj29">Naleśniki z serem i kurczakiem <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz29"><picture><source srcset="./obrazki_pizza/obrazek29.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek29.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek29.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_29"/></picture></div>
+							<div class="zawartosc">3. <span class="wybierz" id="laduj30">Naleśniki z serem i kebabem <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz30"><picture><source srcset="./obrazki_pizza/obrazek30.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek30.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek30.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_30"/></picture></div>
+							<div class="zawartosc">4. <span class="wybierz" id="laduj31">Naleśniki wegetariańskie <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz31"><picture><source srcset="./obrazki_pizza/obrazek31.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek31.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek31.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_31"/></picture></div><br/>
+
+							<div class="naglowek">NAPOJE</div>
+							<div class="zawartosc">1. <span class="wybierz" id="laduj32">Coca-Cola <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz32"><picture><source srcset="./obrazki_pizza/obrazek32.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek32.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek32.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_32"/></picture></div>
+							<div class="zawartosc">2. <span class="wybierz" id="laduj33">Coca-Cola Zero <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz33"><picture><source srcset="./obrazki_pizza/obrazek33.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek33.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek33.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_33"/></picture></div>
+							<div class="zawartosc">3. <span class="wybierz" id="laduj34">Coca-Cola Lime <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz34"><picture><source srcset="./obrazki_pizza/obrazek34.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek34.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek34.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_34"/></picture></div>
+							<div class="zawartosc">4. <span class="wybierz" id="laduj35">Fanta <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz35"><picture><source srcset="./obrazki_pizza/obrazek35.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek35.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek35.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_35"/></picture></div>
+							<div class="zawartosc">5. <span class="wybierz" id="laduj36">Sprite <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz36"><picture><source srcset="./obrazki_pizza/obrazek36.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek36.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek36.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_36"/></picture></div>
+							<div class="zawartosc">6. <span class="wybierz" id="laduj37">Tymbark <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz37"><picture><source srcset="./obrazki_pizza/obrazek37.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek37.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek37.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_37"/></picture></div>
+							<div class="zawartosc">7. <span class="wybierz" id="laduj38">Redbull <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz38"><picture><source srcset="./obrazki_pizza/obrazek38.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek38.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek38.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_38"/></picture></div>
+							<div class="zawartosc">8. <span class="wybierz" id="laduj39">Fuze Tea <picture><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 640px)" width="22px" height="22px"/><source srcset="./obrazki_pizza/strzalka1.webp" media="(width < 1100px)" width="24px" height="24px"/><img class="ustaw" src="./obrazki_pizza/strzalka1.webp" width="26px" height="26px" loading="lazy" alt="Strzałka"/></picture></span></div>
+							<div class="wyrownaj" id="obraz39"><picture><source srcset="./obrazki_pizza/obrazek39.webp" media="(width < 640px)" width="90%" height="260px"/><source srcset="./obrazki_pizza/obrazek39.webp" media="(width < 1100px)" width="85%" height="300px"/><img src="./obrazki_pizza/obrazek39.webp" width="80%" height="340px" loading="lazy" alt="Obrazek_39"/></picture></div>
+						</div>
+					</div>
+
+					<div id="tlo2">
+						<div id="zakonczenie">
+							<div class="info2">
+								<picture>
+									<source srcset="./obrazki_pizza/telefon.webp" media="(width < 640px)" width="18px" height="18px"/>
+									<source srcset="./obrazki_pizza/telefon.webp" media="(width < 1100px)" width="20px" height="20px"/>
+									<img src="./obrazki_pizza/telefon.webp" width="22px" height="22px" loading="lazy" alt="Telefon"/>
+								</picture>
+								<i>Telefon:</i> <b>+48 673 279 142</b>
+							</div>
+
+							<div class="info2">
+								<picture>
+									<source srcset="./obrazki_pizza/znacznik.webp" media="(width < 640px)" width="18px" height="18px"/>
+									<source srcset="./obrazki_pizza/znacznik.webp" media="(width < 1100px)" width="20px" height="20px"/>
+									<img src="./obrazki_pizza/znacznik.webp" width="22px" height="22px" loading="lazy" alt="Znacznik"/>
+								</picture>
+								<i>Nasz adres:</i><br/><b>Kazimierza Wielkiego 37, 64-920 Piła</b>
+							</div>
+
+							<div class="info2">
+								<picture>
+									<source srcset="./obrazki_pizza/mapa.webp" media="(width < 640px)" width="18px" height="18px"/>
+									<source srcset="./obrazki_pizza/mapa.webp" media="(width < 1100px)" width="20px" height="20px"/>
+									<img src="./obrazki_pizza/mapa.webp" width="22px" height="22px" loading="lazy" alt="Mapa"/>
+								</picture>
+								<i>Mapa dojazdu:</i><br/><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4782.612947149569!2d16.755246!3d53.176482!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4703e6bb8a236997%3A0x91148cc5636e3d92!2sKazimierza%20Wielkiego%2037%2C%2064-920%20Pi%C5%82a%2C%20Polska!5e0!3m2!1spl!2sde!4v1748635140621!5m2!1spl!2sde" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+
+							<div id="stopka">&copy; 2025 Szulczyk - Przemysław Szułczyński</div>
+						</div>
+					</div>
+				</div>
+			</body>
+	</html>
