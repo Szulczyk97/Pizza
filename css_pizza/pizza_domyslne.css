@@ -16,7 +16,7 @@ html{
 
 body{
 	max-width: 1920px;
-	margin: 0;
+	margin: 0 auto;
 	background-image: url("../obrazki_pizza/tapeta_pizza.webp");
 	background-size: cover;
 	background-attachment: fixed;
