@@ -1,4 +1,5 @@
 <?php
+	session_name("PROJEKT_PIZZA");
 	session_start();
 
 	require_once("./php_pizza/laczenie.php");
